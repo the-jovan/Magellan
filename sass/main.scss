@@ -1,0 +1,19 @@
+@import './abstracts/animations';
+@import './abstracts/mixins';
+@import './abstracts/utilities';
+@import './abstracts/variables';
+
+@import './base/base';
+
+@import './components/answers';
+@import './components/buttons';
+@import './components/images';
+@import './components/score';
+@import './components/titles';
+
+
+@import './layout/header';
+@import './layout/navigation';
+
+@import './pages/home';
+@import './pages/result';

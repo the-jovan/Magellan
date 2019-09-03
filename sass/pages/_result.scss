@@ -1,0 +1,14 @@
+@import './../abstracts/mixins';
+@import './../abstracts/variables';
+
+.result {
+  @include flex-center;
+  height: 65vh;
+  width:  100vw;
+
+  padding: 5vw;
+
+  font-size: 3rem;
+
+  color: $color-dark-primary;
+}

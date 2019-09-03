@@ -1,0 +1,52 @@
+@import './../abstracts/animations';
+@import './../abstracts/mixins';
+@import './../abstracts/variables';
+
+.answers {
+  padding: 0 5vw;
+  
+  @media (min-width: 800px) {
+    display: flex;
+    height: 100%;
+  }
+}
+
+//answer - animated background + text
+.option {
+  @include flex-center;
+  @include disableDrag;
+
+ 
+  height: 10vh;
+  width:  90vw;
+  margin-top: 1vh;
+
+  background-size:     cover;
+  background-position: center;
+
+  font-size:   1.4rem;
+  color:       $color-light-primary;
+  text-shadow: 1px 1px $color-dark-primary;
+  
+  border-radius: 2px;
+
+  &:hover {
+    animation: imageRoll 9s infinite;
+  }
+
+  @media (min-width: 800px) {
+    height: 30vh;
+    margin: 1vh;
+    background-size: 200%;
+  }
+
+}
+
+
+.africa     { background-image: url('./../../media/africa.jpeg');   }
+.asia       { background-image: url('./../../media/asia.jpg');      }
+.south      { background-image: url('./../../media/america_s.jpg'); }
+.north      { background-image: url('./../../media/america_n.jpg'); }
+.europe     { background-image: url('./../../media/europe.jpg');    }
+.antarctica { background-image: url('./../../media/antarctica.jpg');}
+.oceania    { background-image: url('./../../media/oceania.jpg');   }

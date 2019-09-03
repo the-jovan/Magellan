@@ -1,0 +1,23 @@
+The big idea behind how it all works:
+
+<---- mainScript.js ---->
+1. on load main page fetches 5 random questions (fetch all, shuffle them, then select first 5)
+2. select random answers from array of continents by filtering out the correct one, shuffle
+array, pick 2 and then add correct
+3. on load, after all that, render first question, rest will be rendered by click event
+4. map over remaining 4 questions and render them through Question's method
+
+<---- question.js ---->
+5. takes in image link and answers array and renders html part in '.main' container
+6. calls function checkAnswer to see if user selected correct option
+
+<---- user.js ---->
+7. maps over all 'options' and adds click events to verify the answer
+8.1. user clicks on correct answer => answer is green, 750 points are added through Status.correctAnswer(),
+and all other click events are removed as the quora of 1 click has been reached
+8.2. user clicks on wrong answer => answer is red, correct one is styled green, no points are added, 
+and all other click events are removed as the quora of 1 click has been reached
+
+<---- mainScript.js ---->
+9. upon rendering all questions, on next click render score via Status's renderScore method,
+get top 3 scoreboard, add current score, sort array and push top 3 back to the localStorage

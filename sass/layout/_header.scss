@@ -1,0 +1,25 @@
+@import './../abstracts/mixins';
+@import './../abstracts/variables';
+
+.header {
+  &--hide {
+    @include flex-center;
+    @include header-mix;
+    @include transition04;
+    
+    height: 15vh;
+    text-shadow: 2px 2px black;
+  }
+  
+  
+  &--show {
+    @include flex-center;
+    @include header-mix;
+    @include transition04;
+
+    height: 80vh;
+    text-shadow: 2px 2px black;
+  }
+
+  
+}

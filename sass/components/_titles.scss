@@ -1,0 +1,14 @@
+@import './../abstracts/mixins';
+
+.title {
+  &--small {
+    @include transition04;
+    font-size: 1.8rem;
+  }
+
+  &--big {
+    @include transition04;
+    font-size:  3rem;
+    text-align: center;
+  }
+}

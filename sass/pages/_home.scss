@@ -1,0 +1,11 @@
+@import './../abstracts/variables';
+
+.home {
+  overflow: hidden;
+  height: 20vh;
+  background-color: $color-light-primary;
+
+  &__scores {
+    padding: 5vw;
+  }
+}

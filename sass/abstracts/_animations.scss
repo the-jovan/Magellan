@@ -1,0 +1,18 @@
+
+@keyframes imageRoll {
+  0% {
+    background-position: center;
+  }
+
+  25% {
+    background-position: top;
+  }
+
+  75% {
+    background-position: bottom;
+  }
+
+  100% {
+    background-position: center;
+  }
+}

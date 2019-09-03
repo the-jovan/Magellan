@@ -1,0 +1,49 @@
+@import './../abstracts/mixins';
+@import './../abstracts/variables';
+
+.button {
+  @include disableDrag;
+  padding: 15px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  color: $color-light-primary;
+  border: 2px solid $color-light-primary;
+
+  transition: all .2s;
+
+
+  &--small {
+    @include flex-center;
+    width: 15vw;
+  }
+
+
+  &--big {
+    @include flex-center;
+    width: 30vw;
+  }
+
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 5px $color-light-primary;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+
+#clearScoreboard {
+  position: absolute;
+  top:   0;
+  right: 0;
+
+  color:  $color-light-primary;
+  border: 3px solid $color-light-primary;
+}

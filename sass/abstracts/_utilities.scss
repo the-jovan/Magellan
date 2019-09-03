@@ -1,0 +1,24 @@
+@import './variables';
+
+//center vertically
+.center {
+  position: relative;
+  top: 50%;
+  
+  margin: 0;
+  
+  transform: translateY(-50%);
+}
+
+.correct {
+  border: 5px solid $color-correct;
+}
+
+.incorrect {
+  border: 5px solid $color-wrong;
+}
+
+
+.hide {
+  display: none;
+}

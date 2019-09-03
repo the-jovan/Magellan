@@ -1,0 +1,28 @@
+@import './variables';
+
+@mixin flex-center {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+}
+
+@mixin header-mix {
+  width: 100vw;
+  
+  background-image:    url('./../../media/world.jpg');
+  background-size:     cover;
+  background-position: center;
+
+  color: $color-light-primary;
+}
+
+
+@mixin transition04 {
+  transition: .4s all;
+}
+
+@mixin disableDrag {
+  cursor: pointer;
+  user-select:       none;
+  -webkit-user-drag: none;
+}
